@@ -3,6 +3,7 @@ import './App.css'
 import { RequestAirdrop } from './components/RequestAirdrop'
 import { WalletModalProvider, WalletMultiButton, WalletDisconnectButton } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css'
+import { ShowSolBalance } from './components/DisplayBalance'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
               hi there
             </div>
             <RequestAirdrop />
+            <ShowSolBalance/>
           </WalletModalProvider>
         </WalletProvider>
 
